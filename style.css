@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+body, button, a {
+    font-family: "Rubik", sans-serif;
+}
+
+.header {
+    background-color: #f6f6f9;
+}
+
+.header .container .header-about {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-brand {
+    display: block;
+    color: #295091;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.currency-list {
+    display: flex;
+    margin-right: auto;
+}
+
+.currency-item {
+    display: flex;
+    margin-right: 15px;
+}
+
+.currency-item strong {
+    margin-right: 3px;
+    color: #295091;
+}
+
+.currency-item p {
+    color: rgb(82, 82, 82);
+}
+
+.header-search, .header-language, .header-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.header-language-flag {
+    margin-right: 3px;
+}
+
+.header-language-name {
+    font-weight: 500;
+    font-family: "Roboto" sans-serif;
+}
+
+.header-social-link {
+    background-image: linear-gradient(90deg, #1E96CB 15.07%, #87AEE2 85.96%);
+    color: #ffffff;
+    padding: 8px;
+}
+
+.header-social-icon {
+    margin-right: 2px;
+    font-size: 25px;
+}
+
+.header-navbar {
+    display: block;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-item {
+    padding: 15px;
+}
+
+.navbar-link {
+    font-size: 17px;
+    color: #515151;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #295091;
+}
+
+.header-ads {
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.posts {
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.posts h2 {
+    color: #000;
+}
+
+.posts-list {
+    display: flex;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+}
+
+.posts-item {
+    width: 32%;
+    margin-bottom: 15px;
+    margin-left: 13px;
+}
+
+.posts img {
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.posts-title {
+    font-size: 17px;
+    padding: 10px 0 20px 0;
+    transition: 0.1s ease;
+}
+
+.posts-date, .news-date {
+    font-size: 14px;
+    color: #6B6D97;
+}
+
+.posts-item:hover .posts-title, .news-first-box-item:hover .news-title {
+    color: red;
+}
+
+.notification-flex {
+    display: flex;
+    padding: 25px 20px;
+    background-color: #FCF3E0;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notification-flex::before {
+    display: block;
+    width: 30px;
+    height: 30px;
+    content: '';
+    background-image: url('https://namanganliklar24.uz/img/notification.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-right: 20px;
+}
+
+.notification-texts {
+    width: 80%;
+}
+
+.notification-title {
+    font-size: 20px;
+}
+
+.notification-button {
+    color: #ffffff;
+    background: linear-gradient(90deg, #FE5C28 0%, rgba(255,139,54,0.9) 88.43%);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.news .container {
+    display: flex;
+}
+
+.news-first-box {
+    width: 70%;
+}
+
+.news-photo {
+    width: 250px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 20px 20px 0;
+}
+
+.news-first-box-link {
+    display: flex;
+}
+
+.news-first-box-title {
+    padding: 20px 0 25px 0;
+    font-size: 20px;
+}
+
+.news-second-box-item:hover .news-second-box-info {
+    text-decoration: underline;
+}
+
+.news .news-title {
+    font-size: 17px;
+    color: #000000;
+    margin-bottom: 4.8em;
+    transition: 0.1s ease;
+}
+
+.news-second-box {
+    width: 30%;
+    background-color: #F6F6F9;
+    margin-top: 25px;
+}
+
+.news-second-box-item {
+    padding-bottom: 15px;
+    border-bottom: 4px solid #E4E4E4;
+    margin-bottom: 20px;
+}
+
+.news-second-box-content {
+    padding: 20px;
+}
+
+.news-second-box-title {
+    font-size: 22px;
+    padding: 0 0 15px 0;
+}
+
+.news-second-box-info {
+    font-size: 17px;
+    color: #202020;
+    padding-bottom: 10px;
+}
+.news-second-box-date {
+    font-size: 14px;
+    color: #7688A4;
+}
+
+.mobile-app {
+    padding: 20px;
+    background: #F6F6F9;
+    border-radius: 5px;
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-app-image {
+    position: relative;
+    bottom: -23px;
+    width: 230px;
+    height: 180px;
+    background-image: url('https://namanganliklar24.uz/img/phone.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.mobile-app .container {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-app-info {
+    width: 550px;
+    margin-left: 0px;
+}
+
+.mobile-app-title {
+    color: #295093;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.mobile-app-info {
+    color: #333;
+    font-size: 18px;
+}
+
+.play-market-box {
+    display: flex;
+    margin-left: auto;
+}
+
+.play-market-box img {
+    height: 3em;
+    cursor: pointer;
+}
+
+.play-market-image {
+    padding-right: 10px;
+}
+
+.footer {
+    background: #295093;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.footer-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 20px 0;
+}
+
+.footer-title {
+    padding: 11px;
+    background-color: #133C82;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-alert {
+    margin-left: auto;
+    font-weight: 500px;
+    color: #fff;
+}
+
+.footer-telegram-link {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    text-decoration: none;
+    color: #295093;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.footer-telegram-link-icon {
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.footer-line {
+    border: 3px solid #133C82;
+    margin-bottom: 12px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    width: 30%;
+}
+
+.footer-about {
+    text-align: start;
+}
+
+.footer-nav-list, .footer-useful-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav-item, .footer-useful-item {
+    margin: 7px 0;
+}
+
+.footer-nav-link, .footer-useful-link {
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-nav-link:hover, .footer-useful-link:hover {
+    text-decoration: underline;
+}
